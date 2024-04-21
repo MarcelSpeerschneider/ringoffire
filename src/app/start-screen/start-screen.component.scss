@@ -1,0 +1,45 @@
+@import './../../styles.scss';
+
+.start-screen {
+    background-color:#1E1D1B;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    @include center;
+    > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.start-label-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    @include center;
+    > a {
+        font-size: 2.5vw;
+        font-weight: bold;
+        color: #1E1D1B;
+        text-decoration: none;
+        box-sizing: border-box;
+        @include center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    }
+
+    .button {
+        background-color: rgb(228, 199, 36);
+        width: 30vw;
+        height: 8vw;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: rgb(255, 238, 141);
+            box-shadow: 0 0 10px rgb(255, 238, 141);
+        }
+    }
