@@ -1,11 +1,10 @@
 export class Game {
     public players: string[] = [];
     public stack: string[] = [];
-    public playedCard: string[] = [];
+    public playedCards: string[] = [];
     public currentPlayer: number = 0;
 
     constructor() {
-        this.players = ['Player 1', 'Player 2'];
         for (let i = 1; i < 14; i++) {
             this.stack.push('ace_' + i);
             this.stack.push('hearts_' + i);
